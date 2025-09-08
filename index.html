@@ -1,0 +1,86 @@
+* A light/dark mode toggle
+* A counter or button game
+* A collapsible FAQ section
+* A simple dropdown menu
+* A tabbed interface meaning different content is shown when different tabs are clicked
+no html 5 validation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+   
+    <h1>Welcome to RentEase</h1>
+     <section>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="toggleThemeButton">Toggle Light/Dark Mode</button>
+    </section>
+
+    <section>
+        <button id="counterButton">Click me!</button>
+        <p>Button clicked <span id="counter">0</span> times.</p>
+    </section>
+    <h2>About RentEase</h2>
+    <p>RentEase is your go-to platform for seamless rental management.
+        <br> Whether you're a landlord or a tenant, we've got you covered with tools to make renting easier.
+        <br> Explore our features to find out how we can help you today!
+    </p>
+
+    <section id="FAQ">
+       <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question">What is Rent Ease?</div>
+      <div class="faq-answer">Rent Ease is a platform that helps landlords and tenants manage rent payments seamlessly.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How do I sign up?</div>
+      <div class="faq-answer">Simply click the sign-up button, fill in your details, and you’re good to go!</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Is Rent Ease secure?</div>
+      <div class="faq-answer">Yes, we use encrypted payment systems to ensure your transactions are safe.</div>
+    </div>
+  </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+    <form action="" method="GET">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="inquiryType">Inquiry Type:</label>
+        <select id="inquiryType" name="inquiryType">
+            <option value="general">General Inquiry</option>
+            <option value="support">Support</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+        </select><br><br>   
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" ></textarea><br><br> 
+        <button type="submit">Submit</button>
+    </form>
+   </section>
+
+   <section>
+    <footer>
+        <p>&copy; 2025 rentease </p>
+    </footer>
+   </section>
+</body>
+</html>
